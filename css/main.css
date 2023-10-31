@@ -1,0 +1,240 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --sections-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-btn:hover {
+  background-color: var(--red-color);
+  color: white;
+}
+
+.main-title:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Navbar Start */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+.navbar .search input {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+/* Navbar End */
+/* Landing Start */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* Landing End */
+/* Features Start */
+.features .icons-holder {
+  height: 200px;
+}
+
+.features .icons-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icons-holder .number {
+  height: 90%;
+  color: var(--sections-color);
+}
+
+.features .icons-holder .icon {
+  color: var(--green-color);
+  font-size: 65px;
+}
+
+.features .feat {
+  color: var(--yellow-color);
+}
+/* Features End */
+/* Works Start */
+.our-work {
+  background-color: var(--sections-color);
+}
+
+.our-work ul .active,
+.our-work ul li:focus {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+/* Works End */
+/* Stuff Start */
+.stuff .description {
+  width: 500px;
+}
+
+.our-work ul li:hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1cc8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+  transform: translateX(0);
+  cursor: pointer;
+}
+/* Stuff End */
+/* Team Start */
+.team {
+  background-color: var(--sections-color);
+}
+
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team .box h4 {
+  background-color: var(--green-color);
+}
+/* Team End */
+/* Project Start */
+.project {
+  background-color: var(--dark-color);
+}
+/* Project End */
+/* Subscribe Start */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+}
+
+.subscribe ::placeholder {
+  color: white;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* Subscribe End */
+/* Footer Start */
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .copyright > span {
+  color: var(--green-color);
+}
+
+.footer .copyright .d-name {
+  color: var(--yellow-color);
+}
+
+.footer .copyright div:last-child {
+  color: var(--green-color);
+}
+
+.footer .contact svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .facebook {
+  background-color: #1877f2;
+  cursor: pointer;
+}
+
+.footer .twitter {
+  background-color: #1da1f2;
+  cursor: pointer;
+}
+
+.footer .linkedin {
+  background-color: #0a66c2;
+  cursor: pointer;
+}
+
+.footer .youtube {
+  background-color: #ff0000;
+  cursor: pointer;
+}
+/* Footer End */
