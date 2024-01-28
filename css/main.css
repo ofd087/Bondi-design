@@ -6,6 +6,12 @@
   --sections-color: #eff7fa;
 }
 
+@media (max-width: 530px) {
+  html {
+    width: fit-content;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -238,10 +244,3 @@ body {
   cursor: pointer;
 }
 /* Footer End */
-
-/* Media */
-@media (max-width: 531px) {
-  html {
-    width: fit-content;
-  }
-}
