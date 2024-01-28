@@ -6,12 +6,6 @@
   --sections-color: #eff7fa;
 }
 
-@media (max-width: 530px) {
-  html {
-    width: fit-content;
-  }
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -130,9 +124,6 @@ body {
 }
 /* Works End */
 /* Stuff Start */
-.stuff .description {
-  width: 500px;
-}
 
 .our-work ul li:hover {
   color: var(--red-color);
